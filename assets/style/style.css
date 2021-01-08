@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Product-Sans-Regular";
+    color: #fff;
+}
+@font-face{
+    font-family: "Ultra-Bold";
+    src: url("../fonts/Ultra-Regular.ttf");
+}
+@font-face {
+    font-family: "Product-Sans-Bold";
+    src: url("../fonts/Product-Sans-Bold.ttf");
+}
+@font-face {
+    font-family: "Product-Sans-Bold-Italic";
+    src: url("../fonts/Product-Sans-Bold-Italic.ttf");
+}
+@font-face {
+    font-family: "Product-Sans-Regular";
+    src: url("../fonts/Product-Sans-Regular.ttf");
+}
+.cs{
+    height: auto;
+    width: 100%;
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 500px;
+    padding: 50px;
+    background-repeat: repeat;
+    background-size: auto;
+    transition: .5s;
+}
+.content h1{
+    animation: ans infinite 5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Ultra-Bold";
+    font-size: 85px;
+    color: #FFD10F;
+}
+.content h1:before{
+    animation: ans infinite 6s;
+    position: absolute;
+    content: 'Coming Soon';
+    text-transform: uppercase;
+    font-family: "Ultra-Bold";
+    font-size: 85px;
+    color: #BC3838;
+    margin: 10px 0px 0px 10px;
+}
+.content h1:after{
+    animation: comp infinite 5s;
+    position: absolute;
+    content: '#IFEST9';
+    height: 55px;
+    line-height: 50px;
+    width: 175px;
+    margin: 15px 0px 0px -150px;
+    text-transform: uppercase;
+    font-family: "Product-Sans-Bold-Italic";
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background-image: url("../images/comp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* @keyframes ans {
+    0% {
+        transform: translateY(1%);
+    }
+
+    50% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(1%);
+    }
+} */
+@keyframes comp{
+    0%{
+        transform: translateY(-15%);
+    }
+    50% {
+        transform: translateY(15%);
+    }
+    100%{
+        transform: translateY(-15%);
+    }
+}
+.content h3{
+    font-size: 25px;
+}
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 25px 0px 15px;
+}
+input{
+    height: 50px;
+    width: 100%;
+    font-family: "Product-Sans-Regular";
+    font-size: 16px;
+    padding: 0px 100px 0px 25px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+button{
+    position: absolute;
+    height: 50px;
+    width: 115px;
+    text-transform: uppercase;
+    font-family: "Product-Sans-Bold";
+    color: #fff;
+    right: 0px; 
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #BC3838;
+    border: 0px;
+    transition: .5s;
+}
+button:hover{
+    background-color: #A33131;
+    transition: .5s;
+}
+p{
+    font-family: "Product-Sans-Regular";
+    font-size: 16px;
+    color: #403A3A;
+    margin-bottom: 50px;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    transform: translateY(0%);
+    transition: .5s;
+}
+li:hover{
+    transform: translateY(-15%);
+    transition: .5s;
+}
+li:last-child{
+    margin-right: 0px;
+}
+li a{
+    text-decoration: none; 
+}
+li i{
+    font-size: 25px;
+    color: #BC3838;
+    transition: .5s;
+}
+li:hover i{
+    color: #A33131;
+    transition: .5s;
+}
+
+@media screen and (min-width: 994px){
+    .content{
+        width: 50%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 994px){
+    .content{
+        width: 100%;
+        max-width: 100%;
+    }
+    .content h1 {
+        font-size: 65px;
+    }
+    .content h1:before {
+        font-size: 65px;
+    }
+    .content h1:after {
+        height: 45px;
+        line-height: 45px;
+        width: 165px;
+        margin: 5px 0px 0px -100px;
+    }
+}
